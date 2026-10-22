@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Функция прокрутки вниз</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="hero">
+    <h1>Умная прокрутка вниз</h1>
+    <p>Плавный скролл, индикатор прогресса и кнопка «в самый низ».</p>
+    <button class="btn" id="startBtn">Начать читать</button>
+  </header>
+
+  <main>
+    <section class="block" id="s1"><h2>Раздел 1</h2><p>Нажмите кнопку справа внизу — страница плавно уедет в самый конец. Скорость и плавность настраиваются в script.js.</p></section>
+    <section class="block" id="s2"><h2>Раздел 2</h2><p>Сверху экрана растёт полоса: она показывает, сколько страницы вы уже прочитали.</p></section>
+    <section class="block" id="s3"><h2>Раздел 3</h2><p>Разделы появляются, когда вы до них долистали — для этого используется IntersectionObserver.</p></section>
+    <section class="block" id="s4"><h2>Раздел 4</h2><p>Кнопка меняет направление: в нижней части страницы она ведёт наверх.</p></section>
+    <section class="block" id="s5"><h2>Раздел 5</h2><p>Горячие клавиши: End — вниз, Home — наверх (с плавной анимацией).</p></section>
+  </main>
+
+  <footer class="footer" id="bottom">Вы долистали до конца 🎉</footer>
+
+  <button class="fab" id="fab" aria-label="Прокрутить вниз">↓</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
